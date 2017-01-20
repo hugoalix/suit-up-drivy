@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="extension.css" />
     <title>CSS/HTML Workshop with Drivy</title>
   </head>
+
   <body>
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
+  <image><img src="logoDrivy.png" class="imageflottante" alt="Image flottante"/></image>
+  <titre> Bienvenue sur le site de Drivy </titre>
+
+  <block class="dessous">
+  <div id="car">
+    <indicationCar>Choose your car's model
+    </indicationCar>
+    <input class="model" type="text">
+    <indicationPrice>What is the price per day?
+    </indicationPrice>
+    <input class="price-by-day" type="number"/>
+    <indicationPrice>What is the price per km?
+    </indicationPrice>
+    <input class="price-by-km" type="number"/>
     </div>
     <div id="rental">
+    <indicationDateBegin>Begining Date:</indicationDateDebut>
       <input class="begin" type="date" placeholder="Rental begin date"/>
+      <indicationDateEnd>End Date:</indicationDateEnd>
       <input class="end" type="date" placeholder="Rental end date"/>
+      <indicationKm>How many km?</indicationKm>
       <input class="distance" type="number" placeholder="Distance in km"/>
+      <indicationDeductible>Do you want the deductible option?</indicationDeductible>
       <input class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
+
     <button id="compute">Compute</button>
     <div id="actors"></div>
+
     <script id="template" type="x-tmpl-mustache">
       {{#actors}}
         <div class="actor">
@@ -29,5 +48,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
     <script src="drivy.js"></script>
     <script src="index.js"></script>
+    </block>
   </body>
 </html>

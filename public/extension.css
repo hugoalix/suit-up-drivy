@@ -1,0 +1,53 @@
+titre
+{
+	color:black;
+	font-size: 40px;
+	font-family: "Times New Roman";
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.dessous
+{
+	margin-top: 100px;
+	clear: both;
+}
+#car
+{
+	margin-top: 100px;
+}
+
+#compute
+{
+	margin-top: 50px;
+	border-radius:15px 15px 15px 15px;
+	margin-left: 50px;
+}
+
+#rental
+{
+	margin-top: 50px;
+}
+
+.actor
+{
+	margin-top: 20px;
+	align-items: center;
+	background-color: white;
+	box-shadow: 5px 5px 0px black; 
+}
+
+.option
+{
+	background-color: black;
+}
+
+body
+{
+	background-color: grey;
+	background-image: url("route.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
